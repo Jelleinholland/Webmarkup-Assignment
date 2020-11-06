@@ -1,0 +1,67 @@
+/*Mobiel*/
+@media screen and (max-width: 480px) {
+    video{
+    display: none;
+     }   
+    .flexartic{
+        display: flex;
+      flex-direction: column-reverse;
+    
+    }
+    /*Hamurger menu*/
+    #hamburger:checked ~ ul{
+        display: block;
+    }
+
+    #hamburger{
+        display: none;
+    }
+
+    #burgericon{
+        position: absolute;
+        top: 35px;
+        right: 45px;
+        transform: scale(2);
+    }
+
+    ul{
+        display: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px #000000 solid;
+        border-top: 1px #000000 solid;
+    }
+
+    ul a:link{
+        color:black;
+        text-decoration: none;
+    }
+
+    ul a:visited{
+        color:black;
+        text-decoration: none;
+    }
+
+    ul a:hover{
+        color:black;
+        text-decoration: none;
+    }
+
+    ul a:active{
+        color:black;
+        text-decoration: none;
+    }
+    
+}
+/*tablet*/
+@media screen and (min-width: 481px) and (max-width: 1179px) {
+    
+    
+    
+}
+/*Pc*/
+@media screen and (min-width: 1280px) {
+    
+    
+    
+}
