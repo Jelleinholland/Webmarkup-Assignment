@@ -1,4 +1,4 @@
 Student name: jelle koomen
 Student number: 668419
 Student class: IT1F
-URL student GitHub repository: https://github.com/michaInholland/Webmarkup2021  
+URL student GitHub repository:https://github.com/Jelleinholland/Webmarkup-Assignment 
