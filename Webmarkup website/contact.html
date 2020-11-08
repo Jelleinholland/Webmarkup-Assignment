@@ -8,72 +8,100 @@
     <meta name="author" content="Jelle Koomen" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link type="text/css" rel="stylesheet" href="CSS/stylesheet.css">
-    <title>Contact pagina</title>
+    <link rel="icon" href="img/favicon.ico" type="image/xicon"/>
+    <title>Contact page</title>
 </head>
 
-<body>
-    <h1>Inholland solar energy</h1>
+<body id="contactbodie">
+  
+   <section id="gridheader">
+       <h1>Inholland solar energy</h1>
     <h2>Make the world a better place</h2>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="howsolarworks.html">How solar works</a></li>
-            <li><a href="eusolar.html">Eurosolar</a></li>
-            <li><a href="contact.html">Contact</a></li>
+       
+   </section>
+    
+    <nav id="gridnav">
+       <label for="hamburger" id="burgericon">
+            &#9776;
+        </label>
+        <input type="checkbox" id="hamburger" />
+        
+        <ul id="navbar">
+            <li class="navv"><a href="index.html">Home</a></li>
+            <li class="navv"><a href="howsolarworks.html">How solar works</a></li>
+            <li class="navv"><a href="eusolar.html">Eurosolar</a></li>
+            <li class="navv"><a href="contact.html">Contact</a></li>
         </ul>
+        
+        
     </nav>
 
-    <aside>
-        <h2>Product</h2>
-        <ol>
-
-            <li>
-                <a href="https://www.ikwilzonneenergie.nl/">
-                    <img id="productpic1" src="Media/373_613_20190730135331.png" alt="product1">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.ikwilzonneenergie.nl/">
-
-                    <img id="productpic2" src="Media/373_613_20190730135331.png" alt="product1">
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.ikwilzonneenergie.nl/">
-                    <img id="productpic3" src="Media/373_613_20190730135331.png" alt="product1">
-                </a>
-            </li>
-
-
-        </ol>
-
-    </aside>
-    <fieldset>
+    
+    <fieldset id="contactform">
         <legend>Personal info</legend>
-        <form action="http:// i-want-solar-energy.com/testform.php">
-
-            <label for="name"> Name</label>
-            <input type="text" id="Name" name="firstname" placeholder="Your name">
+        <form action="http://i-want-solar-energy.com/testform.php" method="post">
+           
+            <p>If you want to contact us you can sign this forms</p>
+            
+            <label for="name">Name</label>
+            <input required type="text" id="name" name="firstname" placeholder="Your name">
 
 
             <label for="email">E-mail</label>
-            <input type="text" id="email" name="email" placeholder="Your Email">
+            <input required  type="text" id="email" name="email" placeholder="Your Email">
 
 
             <label for="message">Message</label>
-            <textarea id="Message" name="Message" placeholder="Place your message here"></textarea>
+            <textarea id="message" name="message" placeholder="Place your message here"></textarea>
 
             <input type="submit" value="Submit">
 
         </form>
     </fieldset>
-    <p>Cookie statement</p>
-    <footer>
-        <p class="footer">&copy;2020 Jelle koomen, Studentnr: 668419</p>
+    
+    <aside id="asidecontact">
+        <h2>Product</h2>
+        
+        <figure id="figure1contact">
+            
+             <a href="https://www.ikwilzonneenergie.nl/">
+                    <img id="productpic1" src="img/375_399_20190730143700.png" alt="product1" title="product1">
+                </a>
+            <figcaption>&copy;victronenergy</figcaption>
+        </figure>
+        
+        <figure id="figure2contact">
+          
+           <a href="https://www.ikwilzonneenergie.nl/">
 
+                    <img id="productpic2" src="img/373_613_20190730135331.png" alt="product2" title="product2">
+                </a>
+            <figcaption>&copy;victronenergy</figcaption>
+        </figure>
+        
+        <figure id="figure3contact">
+            <a href="https://www.ikwilzonneenergie.nl/">
+                    <img id="productpic3" src="img/SMA-Sunny-Tripower-30-60.png" alt="product3" title="product3">
+                </a>
+                <figcaption>&copy;victronenergy</figcaption>
+        </figure>
+
+    </aside>
+    <section id="contactfooter">
+        <section id="cookies">
+        <p>Cookie statment</p>
+
+    </section>
+
+
+    <footer class="voeter">
+        <p>&copy;2020 Jelle koomen</p>
+        <p>Studentnr: 668419</p>
 
     </footer>
+        
+    </section>
+    
 </body>
 
 </html>
