@@ -1,30 +1,53 @@
+@font-face {
+    font-family: "notableregular";
+    src: url("css/fonts/Notable-Regular") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: normal;
+    word-spacing: normal;
+    text-indent: inherit;
+}
+
 /*Mobiel*/
 @media screen and (max-width: 480px) {
-    video{
-    display: none;
-     }   
-    .flexartic{
-        display: flex;
-      flex-direction: column-reverse;
-    
-    }
-    /*Hamurger menu*/
-    #hamburger:checked ~ ul{
-        display: block;
-    }
-
-    #hamburger{
+    #logo {
         display: none;
     }
 
-    #burgericon{
+    video {
+        display: none;
+    }
+
+    .flexartic {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    /*Hamurger menu*/
+
+    #hamburger:checked ~ ul {
+        display: block;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #burgericon {
         position: absolute;
-        top: 35px;
-        right: 45px;
+        top: 25px;
+        right: 10px;
         transform: scale(2);
     }
 
-    ul{
+    ul {
         display: none;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -32,36 +55,1011 @@
         border-top: 1px #000000 solid;
     }
 
-    ul a:link{
-        color:black;
+    ul a:link {
+        color: ;
         text-decoration: none;
     }
 
-    ul a:visited{
-        color:black;
+    ul a:visited {
+        color: #03B4F9;
         text-decoration: none;
     }
 
-    ul a:hover{
-        color:black;
+    ul a:hover {
+        color: #03B4F9;
         text-decoration: none;
     }
 
-    ul a:active{
-        color:black;
+    ul a:active {
+        color: #03B4F9;
         text-decoration: none;
     }
-    
+
+    /*einde hambugrer menu*/
+
+    #pic1,
+    #pic2,
+    #pic3 {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    footer {
+        background-color: #000;
+        color: #fff;
+        border: 5px;
+        width: 50%;
+        bottom: -14px;
+        left: 0;
+    }
+
+    #cookies {
+        position: fixed;
+        bottom: -14px;
+        right: 0;
+        width: 50%;
+        height: 10%;
+
+        z-index: 9999;
+        color: #fff;
+        background-color: #FA0;
+        opacity: 0.5;
+    }
+
+    /*how solar works*/
+
+    #gridbodie {
+        display: grid;
+        grid-template-columns: 60%;
+        padding: 5px;
+    }
+
+    #gridheader {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #gridnav {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    ul {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #gridmain {
+        display: grid;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #gridaside {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #gridartikel6 {
+        display: none;
+    }
+
+    #gridartikel5 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #gridartikel4 {
+        display: none;
+    }
+
+    #gridartikel3 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #gridartikel2 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #gridartikel1 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    #gridaside {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #gridfooter {
+        grid-row-start: 10;
+        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-top: 1px #000 solid;
+    }
+
+    /*eurosolar*/
+
+    img {
+        width: 100%;
+    }
+
+    #eurosolarbodie {
+        display: grid;
+        grid-template-columns: 60%;
+    }
+
+    #eurosolarheaders {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #gridnaveurosolar {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #gridtableart {
+        display: none;
+    }
+
+    #eurosolarbodie img {
+        width: 100%;
+    }
+
+    #eurosolarbodie table {
+        width: 100%;
+    }
+
+    #gridasideeurosolar {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    ul {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    p {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    table {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-bottom: 1px #000 solid;
+    }
+
+    #gridtable {}
+
+    .data2011,
+    .data2012,
+    .data2013,
+    .data2014,
+    .data2015 {
+        display: none;
+    }
+
+    /*Contact page*/
+    #contactbodie {
+        display: grid;
+        grid-template-columns: 60%;
+    }
+
+    #gridheader {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #gridnav {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    ul {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #contactform {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #contactform input {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #asidecontact {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #contactfooter {
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-top: 5px;
+
+    }
+
+
+
+
 }
+
 /*tablet*/
 @media screen and (min-width: 481px) and (max-width: 1179px) {
-    
-    
-    
+
+    /*Homepage*/
+    #hamburger {
+        display: none;
+    }
+
+    #burgericon {
+
+        display: none;
+    }
+
+    video {
+        width: 700px;
+        height: auto;
+        order: 2;
+    }
+
+    #flexbodie {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #flexheader {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        order: 0;
+    }
+
+    ul {
+        display: flex;
+        padding-bottom: 5px;
+        padding-top: 5px;
+
+    }
+
+    li {
+        padding-right: 25px;
+        padding-left: 5px;
+    }
+
+
+    .flexartic {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #flexaside {
+        order: 1;
+    }
+
+    #flexcontainer3 {
+        order: 0;
+        flex-direction: row;
+    }
+
+    #flexcontainer2 {
+        order: 1;
+        flex-direction: row;
+    }
+
+    #flexcontainer1 {
+        order: 2;
+        flex-direction: row;
+    }
+
+    .voeter {
+        background-color: black;
+        color: #fff;
+        border: 5px;
+        width: 100%;
+        bottom: -14px;
+        left: 0;
+        clear: both;
+    }
+
+    #cookies {
+        position: fixed;
+        bottom: -14px;
+        right: 0;
+        width: 50%;
+        height: 5%;
+        z-index: 9999;
+        color: #fff;
+        background-color: #FA0;
+        opacity: 0.5;
+    }
+
+    #flexnav {
+        order: 0;
+    }
+
+
+    /*howsolarworks*/
+
+    #gridcontainer {
+        display: grid;
+        grid-template-columns: 50%;
+        
+        padding: 5px;
+    }
+
+    #gridnav {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    li {
+        padding-right: 50px;
+        padding-left: 25px;
+    }
+
+    #gridaside {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #gridmain {
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+    }
+
+    #gridartikel6 {
+        grid-row-start: 9;
+        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #gridartikel5 {
+        grid-row-start: 6;
+        grid-row-end: 9;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    #gridartikel4 {
+        display: none;
+    }
+
+    #gridartikel3 {
+        grid-row-start: 5;
+        grid-row-end: 9;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #gridartikel2 {
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+    }
+
+    #gridartikel1 {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #gridaside {
+        display: grid;
+        grid-template-columns: 33%;
+        grid-row-start: 10;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        width: 90%;
+
+    }
+
+    #gridfigure1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        width: 100px;
+        height: 100px;
+        display: none;
+
+    }
+
+    #gridfigure2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 90%;
+        display: none;
+    }
+
+    #gridfigure3 {
+        display: none;
+    }
+
+    #gridfooter {
+        width: 200%;
+        grid-row-start: 13;
+        grid-row-end: 14;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        border-top: 1px #000 solid;
+    }
+
+    h2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    /*eurosolar*/
+
+    #eurosolarbodie {
+        display: grid;
+        grid-template-columns: 60%;
+    }
+
+    #eurosolarheaders {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #gridnaveurosolar {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    ul {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    p {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    table {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 10px;
+    }
+
+    .data2011,
+    .data2012,
+    .data2013 {
+        display: none;
+    }
+
+    #gridasideeursolar {
+        display: grid;
+        grid-template-columns: 50%;
+
+
+    }
+
+    #figure2eurosolar,
+    #figure3eurosolar {
+        width: 100%;
+    }
+
+    #figure1eurosolar {
+        display: none;
+    }
+
+    #figure2eurosolar {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #figure3eurosolar {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    /*contact*/
+    #contactform {
+        display: grid;
+
+    }
+
+    fieldset {
+        border-color: #FF0000;
+        border-width: 2px;
+        border-style: double;
+    }
+
+    img {
+        height: auto;
+        width: 300px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #contactbodie {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #gridheader {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #gridnav {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    ul {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #contactform {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #asidecontact {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    #contactfooter {
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-top: 5px;
+
+
+    }
+
+    #contactform {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-bottom: 1em;
+    }
+
 }
+
 /*Pc*/
 @media screen and (min-width: 1280px) {
-    
-    
-    
+
+    /*index*/
+
+    /*hamburger menu*/
+
+    #burgericon {
+        display: none;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    /* einde hamburger menu*/
+
+    /*footer*/
+
+    .voeter {
+        background-color: #000;
+        color: #fff;
+        border: 5px;
+        text-align: center;
+        padding: 1px;
+        left: 0;
+        width: 75%;
+        border-color: #9937FA;
+    }
+
+    #cookies {
+        position: fixed;
+        bottom: -14px;
+        right: 0;
+        width: 25%;
+        height: 10%;
+        border-color: #667966;
+        border-width: 2px;
+        border-style: double;
+        z-index: 9999;
+        color: #fff;
+        background-color: #FA0;
+        opacity: 0.5;
+    }
+
+    /*einde footer*/
+
+    video {
+        width: 800px;
+        height: auto;
+        width: 100%;
+    }
+
+    #flexaside {
+        float: right;
+    }
+
+    #flexbodie {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #flexaside {
+        flex: 1;
+    }
+
+    #flexartic {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+    }
+
+    .flexart {
+        display: flex;
+    }
+
+    .flexindeximage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #flexmain {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*einde index*/
+
+
+    #gridbodie {
+        display: grid;
+        grid-template-columns: 33%;
+        padding: 5px;
+    }
+
+    #gridheader {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #gridlogo {
+        width: 25%;
+        height: 25%;
+    }
+
+    #gridnav {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #gridlink1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #gridlink2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    #gridlink3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    #gridmain {
+        display: grid;
+        grid-template-columns: 33%;
+        grid-column-gap: 10px;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        width: 100%;
+    }
+
+    #gridartikel1 {
+        grid-row-start: 3;
+        grid-row-end: 9;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    #gridartikel2 {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #gridartikel3 {
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    #gridartikel4 {
+        grid-row-start: 6;
+        grid-row-end: 10;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    #gridartikel5 {
+        grid-row-start: 6;
+        grid-row-end: 9;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #gridartikel6 {
+        grid-row-start: 9;
+        grid-row-end: 10;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    #gridaside {
+        display: grid;
+        grid-template-columns: 33%;
+        grid-row-start: 10;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        width: 90%;
+    }
+
+    #gridfigure1 img {
+        width: 100%;
+    }
+
+    #gridfigure2 img {
+        width: 100%;
+    }
+
+    #gridfigure3 img {
+        width: 100%;
+    }
+
+    #gridfigure1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+
+    }
+
+    #gridfigure2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        align-self: center;
+    }
+
+    #gridfigure3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        align-self: center;
+
+    }
+
+    #gridfooter {
+        grid-row-start: 11;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border-top: 1px #000 solid;
+        border-color: #000;
+    }
+
+    /*eurosolar*/
+
+    #euroslarbodie {
+        display: grid;
+        grid-template-columns: 50%;
+    }
+
+    #gridnaveurosolar {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #gridnaveursolar ul {
+        display: grid;
+        grid-template-columns: 33%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-bottom: 1px #000 solid;
+        border-top: 1px #000 solid;
+    }
+
+    ul {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    p {
+        text-indent: 1rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .tableizer-table {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding-right: 10px;
+    }
+
+    #grideurosolar {
+        display: grid;
+        grid-template-columns: 50%;
+        grid-gap: 50px;
+
+    }
+
+    #gridasideeurosolar {
+
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+    }
+
+
+    .data2011 {
+        display: none;
+    }
+
+    /*contact*/
+    img {
+        height: auto;
+        width: 300px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #contactbodie {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    #gridheader {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #gridnav {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    ul {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #contactform {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #asidecontact {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    #contactfooter {
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-top: 5px;
+        width: 75%;
+
+    }
+
+    #contactform {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-bottom: 1em;
+    }
+
+    #figure1contact,
+    #figure2contact,
+    #figure3contact {
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
